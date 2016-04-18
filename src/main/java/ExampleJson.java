@@ -123,37 +123,3 @@ public class ExampleJson {
         }
     }
 
-
-
-
-//        //"weather"
-//        String result_weather;
-//        JSONArray JSONArray_weather = jsonObject.getJSONArray("list");
-//        if(JSONArray_weather.length() > 0){
-//            JSONObject JSONObject_weather = JSONArray_weather.getJSONObject(0);
-//            int result_id = JSONObject_weather.getInt("dt");
-//            String result_main = JSONObject_weather.getString("main");
-//            String result_description = JSONObject_weather.getString("description");
-//            String result_icon = JSONObject_weather.getString("icon");
-//
-//            result_weather = "weather\tid: " + result_id +"\tmain: " + result_main + "\tdescription: " + result_description + "\ticon: " + result_icon;
-//        }else{
-//            result_weather = "weather empty!";
-//        }
-//
-//        //"base"
-//        String result_base = jsonObject.getString("base");
-//
-
-
-//        return
-//                        "main\ttemp: " + result_temp + "\thumidity: " + result_humidity + "\tpressure: " + result_pressure + "\ttemp_min: " + result_temp_min + "\ttemp_max: " + result_temp_min + "\n" +
-//                        result_wind + "\n" +
-//                        "clouds\tall: " + result_all + "\n" +
-//                        "dt: " + result_dt + "\n" +
-//                        "id: " + result_id + "\n" +
-//                        "name: " + result_name + "\n" +
-//                        "cod: " + result_cod + "\n" +
-//                        "\n";
-//    }
-//}
