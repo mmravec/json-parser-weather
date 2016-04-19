@@ -170,7 +170,7 @@ public class ExampleJson {
                     } else if (result_clauds_night < 75 && result_clauds_night > 35) {
                         result_night = ("Polooblacno");
                     } else {
-                        result_night = ("Slnecno");
+                        result_night = ("Jasno");
                     }
                     //System.err.print("Update: " + result_date_night +" Oblcnst: " + result_night + "\n Nocna teplota MAX/MIN: " + String.format("%.2f", result_temp_max_night) + " C/" + String.format("%.2f", result_temp_min_night) + " C " );
 
@@ -193,10 +193,11 @@ public class ExampleJson {
 
                     result_weather = "*************Predpoved na Dnes [" + part1 + "]************* \n\nMesto: " + city.getString("name") + "\t Koordinaty: [" + reusult_lon + " " + result_lat + "]\t Populacia:\t " + result_population + " \n" +
                             "Aktualna teplota: " + String.format("%.2f", result_temp) + " C \tVlhkost: " + result_humidity + "%\t Max/Min teplota: " + String.format("%.2f", result_temp_max) + "/" + String.format("%.2f", result_temp_min) + " C Obloha: " + result +
-//                            "\nTlak: " + result_pressure + " hPa\t Rychlost vetra: " + result_wind_speed + " m/s\t Mnozstvo zrazok zaposledne 3h " + result_rain_per_tree_hour + " mil" +
-                            "\nposledny update: " + result_date + "\n\n" +
+                            "\nTlak: " + result_pressure + " hPa\t Rychlost vetra: " + result_wind_speed + " m/s\t Mnozstvo zrazok zaposledne 3h " + //result_rain_per_tree_hour + " mil" +
+                            "\n********************Noc**********************\n" +
+                            "Nocna Obloha: " + result_night + " Nocna teplota MAX/MIN: " + String.format("%.2f", result_temp_max_night) + " C/" + String.format("%.2f", result_temp_min_night) +" \n" +
                             "*************Predpoved na zajtra************* \n" +
-                            "\nMesto:" + city.getString("name") + "t Koordinaty: [" + reusult_lon + " " + result_lat + "]\t Populacia:\t " + result_population + " \n" +
+                            "\nMesto:" + city.getString("name") + "t Koordinaty: [" + reusult_lon + " " + result_lat + "]\t Populacia:\t " + result_population + "Nocna teplota MAX/MIN: " + String.format("%.2f", result_temp_max_night) + " C/" + String.format("%.2f", result_temp_min_night) + " C\n" +
                             "Aktualna teplota: " + String.format("%.2f", result_temp_next_day) + " C \tVlhkost: " + result_humidity_next_day + "%\t Max/Min teplota: " + String.format("%.2f", result_temp_max_next_day) + "/" + String.format("%.2f", result_temp_min) + " C Obloha: " + result +
                             "\nTlak: " + result_pressure_next_day + " hPa\t Rychlost vetra: " + result_wind_speed_next_day + " m/s\t Mnozstvo zrazok zaposledne 3h " + //result_rain_per_tree_hour_next_day + " mil" +
                             "\nposledny update: " + result_date_next_day;
